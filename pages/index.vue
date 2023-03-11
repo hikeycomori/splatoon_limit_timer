@@ -5,7 +5,8 @@
         </div>
     </div>
 
-    <nuxt-link to="./image-timer">To Image Timer</nuxt-link>
+    <nuxt-link to="./saimonrun-image-timer">To Image Timer</nuxt-link>
+    <nuxt-link to="./turfwar-timer">To Image Timer</nuxt-link>
 </template>
 
 <script setup lang="ts">
