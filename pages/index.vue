@@ -4,9 +4,13 @@
             {{ `${hour}:${munites}:${seconds}` }}
         </div>
     </div>
-
-    <nuxt-link to="./saimonrun-image-timer">To Image Timer</nuxt-link>
-    <nuxt-link to="./turfwar-timer">To Image Timer</nuxt-link>
+    <div class="Timers">
+        <oi>
+            <li><nuxt-link to="./saimonrun-image-timer">To SalmonRunImage Timer</nuxt-link></li>
+            <li><nuxt-link to="./turfwar-timer">To TurfWarImage Timer</nuxt-link></li>
+            <li><nuxt-link to="./bankara-challenge-timer">To BankaraChallenge TimerImage Timer</nuxt-link></li>
+        </oi>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -40,4 +44,6 @@ const { hour, munites, seconds, isShowTimer } = useTimer(res.value.results[0].en
     font-size: 60px;
     z-index: 1;
 }
+
+.timers {}
 </style>

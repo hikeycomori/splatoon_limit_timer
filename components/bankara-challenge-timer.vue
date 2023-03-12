@@ -17,11 +17,18 @@ const container = ref<HTMLElement | null>(null);
 const firstStageImgUrl = computed(() => res.value?.results[0].stages[0].image)
 const secondStageImgUrl = computed(() => res.value?.results[0].stages[1].image)
 
-const url = "https://spla3.yuu26.com/api/regular/now";
+const url = "https://spla3.yuu26.com/api/bankara-challenge/now";
 const raw = await fetch(url)
 res.value = await raw.json()
 
 const { hour, munites, seconds, isShowTimer } = useTimer(res.value.results[0].end_time)
+
+const diff = new Date(res.value.results[0].end_time).getTime() - new Date().getTime();
+
+if (diff <= 0 && process.client) {
+    location.reload();
+}
+
 </script>
 
 <style scoped lang="scss">
