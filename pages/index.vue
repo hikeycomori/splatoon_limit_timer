@@ -6,9 +6,9 @@
     </div>
     <div class="Timers">
         <oi>
-            <li><nuxt-link to="./saimonrun-image-timer">To SalmonRunImage Timer</nuxt-link></li>
-            <li><nuxt-link to="./turfwar-timer">To TurfWarImage Timer</nuxt-link></li>
-            <li><nuxt-link to="./bankara-challenge-timer">To BankaraChallenge TimerImage Timer</nuxt-link></li>
+            <li><nuxt-link to="./saimonrun-image-timer">To SalmonRun ImageTimer</nuxt-link></li>
+            <li><nuxt-link to="./turfwar-timer">To TurfWar ImageTimer</nuxt-link></li>
+            <li><nuxt-link to="./bankara-challenge-timer">To BankaraChallenge ImageTimer</nuxt-link></li>
         </oi>
     </div>
 </template>

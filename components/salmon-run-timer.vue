@@ -27,6 +27,11 @@ const raw = await fetch(url)
 res.value = await raw.json()
 
 const { hour, munites, seconds, isShowTimer } = useTimer(res.value.results[0].end_time)
+
+const diff = new Date(res.value.results[0].end_time).getTime() - new Date().getTime();
+
+if (diff <= 0 && process.client) {
+    location.reload();
 </script>
 
 <style scoped lang="scss">
